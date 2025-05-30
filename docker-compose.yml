@@ -1,8 +1,8 @@
-version: '3.9'
+version: "3.8"
 
 services:
   project_data_warehouse_from_scratch:
-    image: bitnami/postgresql:16
+    build: .
     container_name: project_data_warehouse_from_scratch
     environment:
       POSTGRES_USER: postgres
